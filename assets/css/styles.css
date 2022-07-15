@@ -12,66 +12,62 @@ a {
     border-bottom: 1px solid #eee;
 }
 .boton {
-    border: none;
     border-radius: 5px;
     padding: 10px 30px;
     font-weight: bold;
-    display: inline-block;
+    border: solid 2px rgb(45, 45, 45);
+    background-color: transparent;
 }
 .boton:hover {
     cursor: pointer;
 }
 .boton-primario {
-    color: #eee;
-    background-color: firebrick;
-    margin-right: 5px;
+    color: rgb(129, 129, 129);
 }
 .boton-primario:hover {
-    background-color: rgba(178, 34, 34, 0.68) ;
-}
-.boton-secundario {
-    margin-right: 5px;
+    background-color: rgb(45, 45, 45); ;
+    color: white;
 }
 .boton-secundario:hover {
-    background-color: rgb(125, 124, 124);
+    background-color: rgb(45, 45, 45);
     color: white;
 }
-.btn-turnos {
-    background-color: rgb(0, 143, 143)!important;
-    color: white;
+.btn-turnos,.boton-secundario {    
+    color: rgb(129, 129, 129);
 }
 .btn-turnos:hover {
-    background-color: rgb(0, 224, 224)!important;
-    color: black;
+    background-color: rgb(45, 45, 45);
 }
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    background-color: rgba(1,1,1,.8);
+    color: rgb(129, 129, 129);
 }
 .contenedor {
-    margin: 20px;
+    margin: 5% 35%;
     padding: 10px 15px;
-    box-shadow: 0px 0px 10px 1px #0000005c;
+    /* box-shadow: 0px 0px 10px 1px #0000005c; */
     border-radius: 5px;
+    animation: latir infinite 2s linear;
 }
 .headerclass {       
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     /* box-shadow: 0px 0px 10px 5px #0000005c; */
 }
 
 .titulo {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 .subtitulo {
     height: 80%;
-    background-color: rgba(1,1,1,.8);;
     margin-right: 3px;
     padding: 3px 20px;
     display: flex;
@@ -79,7 +75,7 @@ body {
     border-radius: 2px;    
 }
 .subtitulo span {
-    color: black;
+    color: rgb(129, 129, 129);
     font-weight: bold;
     font-size: xx-large;
 }
@@ -101,12 +97,11 @@ body {
     text-align: end;
 }
 .split {
-    height: 20px;
+    height: 2px;
     width: 100%;
-    background-color: #eee;
+    background-color: rgb(45, 45, 45);
     text-align: center;
     font-weight: bold;
-    color: rgb(255, 80, 80);
 }
 .datos {
     display: flex;
@@ -117,26 +112,20 @@ body {
 .campos {
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
 .campos:last-of-type{
     margin-left: 10px;
 }
 .campo {
     margin: 3px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.campo input[type="text"]{
-    display: inline-block;
-    width: 50%;
+    width: 100%;
 }
 input[type="text"], select {
     border: 2px solid #eee;
     padding: 3px;
     border-radius: 5px;
-    width: 60%;
+    width: 100%;
+    height: 30px;
 }
 .seccionservicio {
     padding-top: 10px;
@@ -144,7 +133,6 @@ input[type="text"], select {
     width: 100%;
 }
 .seccionservicio div {
-    width: 40%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
@@ -170,8 +158,9 @@ input[type="text"], select {
     width: 25%;
 }
 .controles {
-    width: 100%!important;
-    justify-content: flex-end!important;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
 .modal-servicio {
   text-align: center;
@@ -185,7 +174,7 @@ input[type="text"], select {
 }
 .content-modal{
   color: rgb(1 1 1);
-  margin: 104px auto 0 auto;
+  margin: 0 auto;
   width: 900px;
 }
 .none {
@@ -193,16 +182,38 @@ input[type="text"], select {
 }
 .modal-header {
   border-bottom: solid 1px #eee;
+  color: rgb(129, 129, 129);
 }
 .modal-body span{
   font-size: 30px; 
 }
+#modal-btn{
+    animation: latir infinite 2s linear;
+}
 .text-success {
-  color: #4aea71fc;
+  color: rgb(129, 129, 129);
 }
 .text-warning {
   color: #eff37ef7;
 }
 .text-danger {
   color: #c45050;
+}
+
+@keyframes latir {
+    0% {
+        box-shadow: 0px 0px 10px 1px #848484;
+    }
+
+    50% {
+        box-shadow: 0px 0px 30px 6px #a70000;
+    }
+
+    55% {
+        box-shadow: 0px 0px 25px 4px #a70000;
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px 1px #848484;
+    }
 }
