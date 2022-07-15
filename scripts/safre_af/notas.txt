@@ -1,0 +1,6 @@
+SELECT * FROM dis_cuenta  WHERE nss= 'I0176102124';
+DELETE FROM cuota_diaria WHERE n_seguro='I0176102124';
+DELETE FROM cta_nss_regimen WHERE Nss = 'I0176102124';
+DELETE FROM cta_regimen WHERE Nss = 'I0176102124';
+
+--AGREGAR validacion que actualice el campo tipo_movimiento = 1 en afi_mae_afiliado

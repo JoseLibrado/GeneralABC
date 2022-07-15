@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>AfxreCxppxl</title>
+</head>
+<body class="contenedor">
+    <div id="modal-ser" class="modal-servicio none">
+      <button id="modal-btn" class="boton boton-secundario" >Aceptar</button>
+    </div>
+    <header class="headerclass">
+    
+        <div class="titulo">
+            <div class="subtitulo"><a href="instrucciones.html"><span><strong>X</strong>_X</span></a></div>
+            <div class="subtitulo"><a href="index.html" ><span>AF<strong>X</strong>RE</span></a></div>
+            <div class="subtitulo"><span>C<strong>X</strong>PP<strong>X</strong>L</span></div>
+        </div>
+    
+        <div class="datoscabecera">
+            <div class="fecha campo-feik"><span>Viernes 04 de Marzo del 2022</span></div>
+            <div class="campo-feik"><span>x x x x x </span></div>
+            <div class="campo-feik">x x x x x </div>
+        </div>
+    
+    </header>
+
+    <div class="split"> Datos de busqueda </div>
+
+    <main class="">
+        
+        <section class="datos-trabajador">
+            <div class="datos">
+                <div class="campos">
+                    <div class="campo">
+                        <label for="nss">NSS</label>
+                        <input type="text" name="nss" id="nss" placeholder="nss" pattern=[0-9]>
+                    </div>
+
+                    <div class="campo">
+                        <label for="curp">CURP</label>
+                        <input type="text" name="curp" id="curp" placeholder="x x x x x" disabled>
+                    </div>
+
+                    <div class="campo">
+                        <label for="rfc">RFC</label>
+                        <input type="text" name="rfc" id="" placeholder="x x x x x" disabled>
+                    </div>
+
+                    <div class="campo">
+                        <label for="folio">Folio solicitud</label>
+                        <input type="text" name="folio" id="" placeholder="x x x x x" disabled>
+                    </div>
+                </div>
+                <div class="campos">
+
+                    <div class="campo">
+                        <label for="">Apelido Paterno</label>
+                        <input type="text" name="" id="" placeholder="x x x x x" disabled>
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Apellido Materno</label>
+                        <input type="text" name="" id="" placeholder="x x x x x" disabled>
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Nombre</label>
+                        <input type="text" name="" id="" placeholder="x x x x x" disabled>
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Tipo</label>
+                        <input type="text" name="" id="" placeholder="x x x x x" disabled>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="split">Seleccion de Servicio</div>
+        
+        <section class="datosservicio">
+            <div  class="seccionservicio">
+                <div class="tipotrabajador">
+                    <label for="trabajador">* Tipo trabajador</label>
+                    <select name="trabajador" id="trabajador" class="trabajador">
+                        <option value="0">Selecciona tipo de trabajador</option>
+                    </select>
+                </div>
+                <div class="elegirservicio">
+                    <label for="servicio">* Selecciona servicio</label>
+                    <select name="servicio" id="servicio" class="servicio">
+                        <option value="0">Selecciona un servicio</option>
+                    </select>
+                </div>
+                <div class="tiposolicitante">
+                    <label for="solicitante">* Tipo solicitante</label>
+                    <select name="solicitante" id="solicitante" class="solicitante">
+                        <option value="0">selecciona tipo de solicitante </option>
+                    </select>
+                </div>
+                <div class="correoelectronico">
+                    <div class="correo">
+                        <label for="correo">* Correo electronico</label>
+                        <input type="text" name="correo" id="correo" placeholder="ingresa correo">
+                        <label for="selectordominiocorreo">*  Dominio</label>
+                        <select name="selectordominiocorreo" id="selectordominiocorreo" class="selectordominiocorreo">
+                            <option value="0">Selecciona dominio</option>
+                        </select>
+                    </div>
+                    <div class="confirmacion">
+                        <label for="confirmacion">* Confirmacion de correo</label>
+                        <input type="text" name="confirmacion" id="confirmacion" placeholder="confirmacion de correo">
+                        <label for="selectordominio">*  Dominio</label>
+                        <select name="selectordominio" id="selectordominio" class="selectordominio">
+                            <option value="0">Selecciona dominio</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="controles">
+                    <button type="submit" id="consultar" class="boton boton-primario">X X X X X</button>
+                    <button type="reset" id="limpiar" class="boton boton-secundario">Limpiar</button>
+                    <button type="reset" id="turnos" class="boton boton-secundario btn-turnos">Amb Turnos</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <script src="js/clases/Peticion.js" type="module"></script> 
+    <script src="js/clases/Datos.js" type="module"></script>
+    <script src="js/clases/Modal.js" type="module"></script>
+    <script src="../utileriasmas/js/jquery-3.1.0.min.js"></script>
+    <script src="js/afxrxcxppxl.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>   
+</body>
+</html>

@@ -1,0 +1,208 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+a {
+	text-decoration: none;
+}
+.b-bottom{
+    border-bottom: 1px solid #eee;
+}
+.boton {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton-primario {
+    color: #eee;
+    background-color: firebrick;
+    margin-right: 5px;
+}
+.boton-primario:hover {
+    background-color: rgba(178, 34, 34, 0.68) ;
+}
+.boton-secundario {
+    margin-right: 5px;
+}
+.boton-secundario:hover {
+    background-color: rgb(125, 124, 124);
+    color: white;
+}
+.btn-turnos {
+    background-color: rgb(0, 143, 143)!important;
+    color: white;
+}
+.btn-turnos:hover {
+    background-color: rgb(0, 224, 224)!important;
+    color: black;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.contenedor {
+    margin: 20px;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 10px 1px #0000005c;
+    border-radius: 5px;
+}
+.headerclass {       
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 0px 0px 10px 5px #0000005c; */
+}
+
+.titulo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.subtitulo {
+    height: 80%;
+    background-color: rgba(1,1,1,.8);;
+    margin-right: 3px;
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;    
+}
+.subtitulo span {
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.subtitulo span strong {
+    /* color: rgb(255, 80, 80); */
+    color: firebrick;
+}
+
+.datoscabecera {
+    display: flex;
+    flex-direction: column;
+
+}
+.campo-feik {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 5px ;
+    padding: 5px;
+    text-align: end;
+}
+.split {
+    height: 20px;
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 80, 80);
+}
+.datos {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.campos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.campos:last-of-type{
+    margin-left: 10px;
+}
+.campo {
+    margin: 3px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.campo input[type="text"]{
+    display: inline-block;
+    width: 50%;
+}
+input[type="text"], select {
+    border: 2px solid #eee;
+    padding: 3px;
+    border-radius: 5px;
+    width: 60%;
+}
+.seccionservicio {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.seccionservicio div {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.correoelectronico {
+    width: 60%!important;
+    flex-direction: column;
+    justify-content: space-around!important;
+}
+.correoelectronico div {
+    width: 100%!important;    
+    align-items: center;
+}
+.correoelectronico div input{
+    display: inline-block;
+    width: 25%;
+    margin-right: 10px;
+}
+.correoelectronico div label {
+    width: 25%;
+}
+.correoelectronico div select {
+    width: 25%;
+}
+.controles {
+    width: 100%!important;
+    justify-content: flex-end!important;
+}
+.modal-servicio {
+  text-align: center;
+  background-color: rgba(1, 1, 1,.8);
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute; 
+}
+.content-modal{
+  color: rgb(1 1 1);
+  margin: 104px auto 0 auto;
+  width: 900px;
+}
+.none {
+ display: none;
+}
+.modal-header {
+  border-bottom: solid 1px #eee;
+}
+.modal-body span{
+  font-size: 30px; 
+}
+.text-success {
+  color: #4aea71fc;
+}
+.text-warning {
+  color: #eff37ef7;
+}
+.text-danger {
+  color: #c45050;
+}
